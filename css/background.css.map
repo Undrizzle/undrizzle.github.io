@@ -1,0 +1,1 @@
+{"version":3,"sources":["background.scss"],"names":[],"mappings":"AAAA,KACE,oEAAqE,CACtE","file":"background.css","sourcesContent":["body {\n  background: url('../images/7FK47u9.jpg') center/cover no-repeat fixed;\n}"],"sourceRoot":"/source/"}

@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | undrizzle | 左手代码，右手诗</title>
+  <title>Hello World | undrizzle</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -20,7 +20,7 @@ Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://yoursite.com/2016/04/20/hello-world/index.html">
-<meta property="og:site_name" content="undrizzle | 左手代码，右手诗">
+<meta property="og:site_name" content="undrizzle">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick">
 <meta property="og:updated_time" content="2016-04-20T04:22:20.588Z">
@@ -313,7 +313,7 @@ Quick">
   </section>
 
   <script>
-    var disqus_shortname = 'forsigner';
+    var disqus_shortname = 'undrizzle';
     
     var disqus_url = 'http://yoursite.com/2016/04/20/hello-world/';
     
@@ -326,7 +326,7 @@ Quick">
     })();
   </script>
 
-  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+  <script id="dsq-count-scr" src="//undrizzle.disqus.com/count.js" async></script>
 
 
 
@@ -341,6 +341,14 @@ Quick">
 
   <script type="text/javascript">
   function loadScript(url, callback) {
+    if (document.title == 'undrizzle') {
+      var css=document.createElement("link");
+      css.href="/css/background.css";
+      css.rel = "stylesheet";
+      css.type = "text/css";
+      document.getElementsByTagName('head').item(0).appendChild(css);
+    }
+
     var script = document.createElement('script')
     script.type = 'text/javascript';
 

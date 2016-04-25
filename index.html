@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>undrizzle | 左手代码，右手诗</title>
+  <title>undrizzle</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -17,12 +17,12 @@
 
   <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="undrizzle | 左手代码，右手诗">
+<meta property="og:title" content="undrizzle">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="undrizzle | 左手代码，右手诗">
+<meta property="og:site_name" content="undrizzle">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="undrizzle | 左手代码，右手诗">
+<meta name="twitter:title" content="undrizzle">
 <meta name="twitter:description">
 
   
@@ -59,39 +59,42 @@
   
 
   
-  <div class="home-bg">
   <div class="content-home text-center">
-    <a class="avatar" href="/">
-      <img src="/images/avatar.jpg" alt="" />
-    </a>
-    <h1 class="name" style="font-family: calligraffittiregular">
-      不觉细雨
-    </h1>
-    <div class="slogan">
-      You are the javascript in my HTML
-    </div>
-
-    <hr>
-
-    <ul class="text-center nav">
-      
-      <li class="item">
-        
-        <a href="/archives">Blog</a>
-        
-        <span>|</span>
-      </li>
-      
-      <li class="item">
-        
-        <a href="/project/">Project</a>
-        
-        <span>|</span>
-      </li>
-      
-    </ul>
+  <a class="avatar" href="/">
+    <img src="/images/avatar.jpg" alt="" />
+  </a>
+  <h1 class="name" style="font-family: calligraffittiregular">
+    不觉细雨
+  </h1>
+  <div class="slogan">
+    你若喜欢怪人，其实我很美
+    <br>
+    那么孤单，偏说一个人真好
+    <br>
+    母的鸡遇到公的鸡恰恰好生小鸡
   </div>
+
+  <hr>
+
+  <ul class="text-center nav">
+    
+    <li class="item">
+      
+      <a href="/archives">Blog</a>
+      
+      <span>|</span>
+    </li>
+    
+    <li class="item">
+      
+      <a href="/project/">Project</a>
+      
+      <span>|</span>
+    </li>
+    
+  </ul>
 </div>
+
 
 
 
@@ -189,6 +192,14 @@
 
   <script type="text/javascript">
   function loadScript(url, callback) {
+    if (document.title == 'undrizzle') {
+      var css=document.createElement("link");
+      css.href="/css/background.css";
+      css.rel = "stylesheet";
+      css.type = "text/css";
+      document.getElementsByTagName('head').item(0).appendChild(css);
+    }
+
     var script = document.createElement('script')
     script.type = 'text/javascript';
 
